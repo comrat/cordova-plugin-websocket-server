@@ -62,7 +62,7 @@ public class WebSocketServerPlugin extends CordovaPlugin {
     }
 
     @Override
-    public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) {
+    public boolean execute(final String action, JSONArray args, final CallbackContext callbackContext) {
 
         if (wsserver != null && wsserver.failed) {
             wsserver = null;
